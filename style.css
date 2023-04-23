@@ -148,7 +148,7 @@ input,button{
 
 /* Completed */
 .task-label_complet {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
@@ -160,7 +160,7 @@ input,button{
 /*editMode*/
 .task-input_edit {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task-label_disabled {
