@@ -44,7 +44,10 @@ input,button{
   display: inline-block;
   flex-grow: 1
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 010cbc0add20852dda027ddb56033bdc92882ed4
 .add-item__wrapper {
   display: flex;
 }
@@ -143,11 +146,19 @@ input,button{
 }
 
 /*editMode*/
+<<<<<<< HEAD
 .task-input_edit {
+=======
+.todo-items__edit input[type=text] {
+>>>>>>> 010cbc0add20852dda027ddb56033bdc92882ed4
   display:inline-block;
   width:224px
 }
 
+<<<<<<< HEAD
 .task-label_disabled {
+=======
+.todo-items__edit label {
+>>>>>>> 010cbc0add20852dda027ddb56033bdc92882ed4
   display:none;
 }
