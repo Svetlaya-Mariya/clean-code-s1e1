@@ -23,7 +23,7 @@ var createNewTaskElement=function(taskString){
   //input (checkbox)
   var checkBox=document.createElement("input");//checkbx
   //label
-  var label=document.createElement("label");//label
+  var taskName=document.createElement("span");//label
   //input (text)
   var editInput=document.createElement("input");//text
   //button.edit
@@ -34,8 +34,8 @@ var createNewTaskElement=function(taskString){
   var deleteButtonImg=document.createElement("img");//delete button image
   
   listItem.className = "link";
-  label.innerText=taskString;
-  label.className="task task-label";
+  taskName.innerText=taskString;
+  taskName.className="task task-name";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
@@ -55,7 +55,7 @@ var createNewTaskElement=function(taskString){
 
   //and appending.
   listItem.appendChild(checkBox);
-  listItem.appendChild(label);
+  listItem.appendChild(taskName);
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
@@ -88,7 +88,7 @@ var editTask=function(){
   var listItem=this.parentNode;
 
   var editInput=listItem.querySelector(".task-input");
-  var label=listItem.querySelector("label");
+  var taskName=listItem.querySelector("span");
   var editBtn=listItem.querySelector(".edit");
 
   var containsClass=listItem.classList.contains("link_edit");
@@ -98,10 +98,10 @@ var editTask=function(){
 
   //switch to .editmode
   //label becomes the inputs value.
-  label.innerText=editInput.value;
+  taskName.innerText=editInput.value;
   editBtn.innerText="Edit";
   }else{
-  editInput.value=label.innerText;
+  editInput.value=taskName.innerText;
   editBtn.innerText="Save";
   }
 
@@ -109,7 +109,7 @@ var editTask=function(){
   listItem.classList.toggle("link_edit");
   editInput.classList.toggle("task-input_save");
   editInput.classList.toggle("task-input_edit");
-  label.classList.toggle("task-label_disabled");
+  taskName.classList.toggle("task-name_disabled");
 };
 
 //Delete task.
@@ -131,8 +131,8 @@ var taskCompleted=function(){
   //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
   for (let item of listItem.children){
-    if (item.classList.contains("task-label")){
-      item.classList.add("task-label_complet");
+    if (item.classList.contains("task-name")){
+      item.classList.add("task-name_complet");
   }
  }
 
@@ -149,8 +149,8 @@ var taskIncomplete=function(){
   //Append the task list item to the #incompleteTasks.
   var listItem=this.parentNode;
   for (let item of listItem.children){
-    if (item.classList.contains("task-label")){
-      item.classList.remove("task-label_complet");
+    if (item.classList.contains("task-name")){
+      item.classList.remove("task-name_complet");
   }
  }
   incompleteTaskHolder.appendChild(listItem);

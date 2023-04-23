@@ -131,7 +131,7 @@ button {
   margin: 0 10px;
 }
 
-.task-label {
+.task-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -149,7 +149,7 @@ button {
 }
 
 /* Completed */
-.task-label_complet {
+.task-name_complet {
   text-decoration: line-through;
   color: #888;
 }
@@ -165,6 +165,6 @@ button {
   width: 224px;
 }
 
-.task-label_disabled {
+.task-name_disabled {
   display: none;
 }

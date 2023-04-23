@@ -10,25 +10,25 @@
           charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p id="add-item">
+    </header>
+    <main class="main">
+      <section id="add-item">
         <label class="title add-item__title" for="new-task">Add Item</label>
         <div class="add-item__wrapper">
           <input type="text" id="new-task" class="task task-input">
           <button class="button">Add</button>
         </div>
-      </p>
+      </section>
       <h3 class="title">Todo</h3>
       <ul id="todo-items">
         <li class="link">
           <input class="checkbox" type="checkbox">
-          <label class="task task-label">Pay Bills</label>
+          <span class="task task-name">Pay Bills</span>
           <input type="text" class="task task-input task-input_save">
           <button class="button edit">Edit</button>
           <button class="button delete">
@@ -37,7 +37,7 @@
         </li>
         <li class="link link_edit">
           <input class="checkbox" type="checkbox">
-          <label class="task task-label task-label_disabled">Go Shopping</label>
+          <span class="task task-name task-name_disabled">Go Shopping</span>
           <input type="text" value="Go Shopping" class="task task-input task-input_edit">
           <button class="button edit">Save</button>
           <button class="button delete">
@@ -49,7 +49,7 @@
       <ul id="completed-items">
         <li class="link">
           <input class="checkbox" type="checkbox" checked>
-          <label class="task task-label task-label_complet">See the Doctor</label>
+          <span class="task task-name task-name_complet">See the Doctor</span>
           <input type="text" class="task task-input task-input_save">
           <button class="button edit">Edit</button>
           <button class="button delete">
@@ -57,7 +57,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
