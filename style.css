@@ -133,7 +133,7 @@ input,button{
 
 /* Completed */
 .task-label_complet {
-  text-decoration: line-through;
+  text-decoration: line-through
   color: #888;
 }
 
