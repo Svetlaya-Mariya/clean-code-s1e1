@@ -4,11 +4,13 @@ ul {
   padding: 0px;
 }
 
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
 
-input,button{
+input,
+button {
   outline: none;
 }
 
@@ -36,7 +38,7 @@ input,button{
 
 @media (max-width:768px) {
 
-  .header { 
+  .header {
     text-align: center;
   }
 
@@ -51,7 +53,7 @@ input,button{
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-item__wrapper {
@@ -157,7 +159,7 @@ input,button{
   display: none
 }
 
-/*editMode*/
+/* editMode */
 .task-input_edit {
   display: inline-block;
   width: 224px;
