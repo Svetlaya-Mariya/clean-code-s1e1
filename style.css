@@ -156,7 +156,7 @@ button {
 
 /* Edit Task */
 .task-input_save {
-  display: none
+  display: none;
 }
 
 /* editMode */
